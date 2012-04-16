@@ -1,4 +1,8 @@
 publish:
 	python setup.py sdist upload
 
-.PHONY: publish
+clean:
+	rm -rf *.egg-info
+	rm -rf dist
+
+.PHONY: publish clean
