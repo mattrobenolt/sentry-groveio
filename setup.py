@@ -13,7 +13,7 @@ from setuptools import setup, find_packages
 
 
 tests_require = [
-    'nose==1.1.2',
+    'nose>=1.1.2',
 ]
 
 install_requires = [
@@ -22,7 +22,7 @@ install_requires = [
 
 setup(
     name='sentry-groveio',
-    version='0.1.0',
+    version='0.1.1',
     author='Matt Robenolt',
     author_email='matt@ydekproductons.com',
     url='http://github.com/mattrobenolt/sentry-groveio',
