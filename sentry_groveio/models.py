@@ -7,8 +7,8 @@ sentry_groveio.models
 """
 
 from django import forms
-from django.conf import settings
 
+from sentry.conf import settings
 from sentry.plugins import Plugin, register
 
 import urllib
