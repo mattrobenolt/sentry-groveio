@@ -62,7 +62,7 @@ class GroveIoMessage(Plugin):
         data = urllib.urlencode(values)
         request = urllib2.Request(url, data)
         try:
-            response = urllib2.urlopen(request)
+            urllib2.urlopen(request)
         except urllib2.URLError:
             logger.error('Could not connect to Grove.io')
         except urllib2.HTTPError, e:
@@ -74,4 +74,3 @@ class GroveIoMessage(Plugin):
                 logger.error(error['error'])
             else:
                 logger.error('Something bad happened with Grove. :(')
-        response.read()
