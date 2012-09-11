@@ -17,7 +17,7 @@ tests_require = [
 ]
 
 install_requires = [
-    'sentry>=3.8.0',
+    'sentry>=5.0.0',
 ]
 
 setup(
@@ -36,6 +36,14 @@ setup(
     extras_require={'test': tests_require},
     test_suite='runtests.runtests',
     include_package_data=True,
+    entry_points={
+        'sentry.apps': [
+            'groveio = sentry_groveio',
+        ],
+        'sentry.plugins': [
+            'groveio = sentry_groveio.models:GroveIoPlugin',
+        ]
+    },
     classifiers=[
         'Framework :: Django',
         'Intended Audience :: Developers',

@@ -9,7 +9,7 @@ sentry_groveio.models
 from django import forms
 
 from sentry.conf import settings
-from sentry.plugins import Plugin, register
+from sentry.plugins import Plugin
 
 import urllib
 import urllib2
@@ -26,8 +26,7 @@ class GroveIoOptionsForm(forms.Form):
     icon_url = forms.CharField(help_text="(Optional) Icon for the service", required=False)
 
 
-@register
-class GroveIoMessage(Plugin):
+class GroveIoPlugin(Plugin):
     author = 'Matt Robenolt'
     author_url = 'https://github.com/mattrobenolt'
     description = 'Post new exceptions to a Grove.io room.'
