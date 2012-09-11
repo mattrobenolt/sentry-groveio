@@ -29,7 +29,13 @@ class GroveIoOptionsForm(forms.Form):
 @register
 class GroveIoMessage(Plugin):
     author = 'Matt Robenolt'
-    author_url = 'https://github.com/mattrobenolt/sentry-groveio'
+    author_url = 'https://github.com/mattrobenolt'
+    description = 'Post new exceptions to a Grove.io room.'
+    resource_links = (
+        ('Bug Tracker', 'http://github.com/mattrobenolt/sentry-groveio/issues'),
+        ('Source', 'http://github.com/mattrobenolt/sentry-groveio'),
+    )
+
     title = 'Grove.io'
     slug = 'grove-io'
     conf_key = 'groveio'
