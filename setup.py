@@ -22,7 +22,7 @@ install_requires = [
 
 setup(
     name='sentry-groveio',
-    version='0.1.3',
+    version='0.2.0',
     author='Matt Robenolt',
     author_email='matt@ydekproductons.com',
     url='http://github.com/mattrobenolt/sentry-groveio',

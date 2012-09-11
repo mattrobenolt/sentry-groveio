@@ -39,7 +39,7 @@ class GroveIoPlugin(Plugin):
     slug = 'grove-io'
     conf_key = 'groveio'
     description = 'Send errors to Grove.io'
-    version = '0.1.3'
+    version = '0.2.0'
     project_conf_form = GroveIoOptionsForm
 
     def is_configured(self, project):
